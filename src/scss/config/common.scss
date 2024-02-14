@@ -441,10 +441,6 @@
     @media (max-width: $lg) {
       min-height: 0;
       padding: $faqCardMdY $faqCardMdX;
-      margin-right: -80rem;
-      position: absolute;
-      top: -10rem;
-      right: 100%;
     }
     &:hover {
       @media (min-width: $lg-mf) {
