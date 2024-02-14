@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Sokol'
+  })
+  <body>
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header-large.html', {
+          'el': 'site__header header--theme-sticky js-header-sticky'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- hero-section BEGIN -->
+          <section class="hero-section">
+            <div class="container container--size-md hero-section__container">
+              <div class="row hero-section__row">
+                <div class="row__col--9 hero-section__col hero-section__col--content">
+                  <div class="hero-section__content">
+                    <h1 class="hero-section__title">IT-поддержка для вашего онлайн-бизнеса</h1>
+                    <div class="content hero-section__text">
+                      <p>Объединившись с IT компанией "Сокол", мы предлагаем вам широкий спектр IT-услуг для вашего бизнеса.</p>
+                    </div>
+                    <div class="d-lg-block hero-section__brand">
+                      <div class="hero-section__brand-item">
+                        <picture class="hero-section__brand-picture">
+                          <img src="images/logo.png" alt="Рантье" width="162" height="162">
+                        </picture>
+                      </div>
+                      <div class="hero-section__brand-item">
+                        <picture class="hero-section__brand-picture">
+                          <img src="images/logo-sokol.png" alt="Сокол" width="162" height="162">
+                        </picture>
+                      </div>
+                    </div>
+                    <a href="#cta-section" class="js-link-anchor btn btn--size-md btn--theme-accent-fill hero-section__btn">
+                      <span class="btn__inner">
+                        <span class="btn__title">Связаться</span>
+                        <span class="btn__icon btn__icon--dir-rtl">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                          </svg>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="d-lg-none row__col--3 hero-section__col hero-section__col--brands">
+                  <div class="hero-section__brand">
+                    <div class="hero-section__brand-item">
+                      <picture class="hero-section__brand-picture">
+                        <img src="images/logo.png" alt="Рантье" width="162" height="162">
+                      </picture>
+                    </div>
+                    <div class="hero-section__brand-item">
+                      <picture class="hero-section__brand-picture">
+                        <img src="images/logo-sokol.png" alt="Сокол" width="162" height="162">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-section__services">
+                <div class="hero-section__services-col">
+                  <article class="services-card services-card--size-1 hero-section__services-card">
+                    <picture class="bg-color bg-color--theme-darkgrey bg-color--opacity-75 services-card__picture">
+                      <img src="images/services-card-1.jpg" alt="Разработка систем с веб-интерфейсом">
+                    </picture>
+                    <div class="services-card__inner">
+                      <div class="services-card__content">
+                        <h3 class="services-card__title">Разработка систем с веб-интерфейсом</h3>
+                        <p class="services-card__text">Создание веб-систем с удобным интерфейсом, оптимизированных под нужды вашего бизнеса.</p>
+                      </div>
+                    </div>
+                    <div class="services-card__dropdown">
+                      <ul class="services-card__dropdown-list">
+                        <li>
+                          <a href="#" class="services-card__link">
+                            <span class="services-card__link-title">Создание и оптимизация лендингов и мультилендингов</span>
+                            <svg class="u-icon services-card__link-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-4"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="services-card__link">
+                            <span class="services-card__link-title">Разработка интернет-магазинов</span>
+                            <svg class="u-icon services-card__link-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-4"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="services-card__link">
+                            <span class="services-card__link-title">Разработка веб-сайтов под ключ</span>
+                            <svg class="u-icon services-card__link-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-4"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="services-card__link">
+                            <span class="services-card__link-title">Интеграция и настройка CRM и ERP систем</span>
+                            <svg class="u-icon services-card__link-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-4"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="services-card__link">
+                            <span class="services-card__link-title">Разработка корпоративных порталов и&nbsp;систем управления контентом (CMS)</span>
+                            <svg class="u-icon services-card__link-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-4"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="hero-section__services-col">
+                  <article class="services-card services-card--size-2 hero-section__services-card">
+                    <picture class="bg-color bg-color--theme-darkgrey bg-color--opacity-75 services-card__picture">
+                      <img src="images/services-card-2.jpg" alt="Разработка дизайна">
+                    </picture>
+                    <div class="services-card__inner">
+                      <div class="services-card__content">
+                        <h3 class="services-card__title">Разработка дизайна</h3>
+                        <p class="services-card__text">Создаем веб-дизайн и интерфейса, отвечающие требованиям современных пользователей.</p>
+                      </div>
+                    </div>
+                    <div class="services-card__dropdown">
+                      <ul class="services-card__dropdown-list">
+                        <li>
+                          <a href="#" class="services-card__link">
+                            <span class="services-card__link-title">Веб-дизайн и&nbsp;разработка пользовательского интерфейса</span>
+                            <svg class="u-icon services-card__link-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-4"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="hero-section__services-col">
+                  <article class="services-card services-card--size-2 hero-section__services-card">
+                    <picture class="bg-color bg-color--theme-darkgrey bg-color--opacity-75 services-card__picture">
+                      <img src="images/services-card-3.jpg" alt="Обслуживание IT-инфраструктуры">
+                    </picture>
+                    <div class="services-card__inner">
+                      <div class="services-card__content">
+                        <h3 class="services-card__title">Обслуживание<br>IT-инфраструктуры</h3>
+                        <p class="services-card__text">Надежная поддержка и&nbsp;обслуживание<br>IT-инфраструктуры и&nbsp;стабильная работа системы.</p>
+                      </div>
+                    </div>
+                    <div class="services-card__dropdown">
+                      <ul class="services-card__dropdown-list">
+                        <li>
+                          <a href="#" class="services-card__link">
+                            <span class="services-card__link-title">Техническая поддержка и обслуживание IT&nbsp;-&nbsp;инфраструктуры</span>
+                            <svg class="u-icon services-card__link-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-4"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="hero-section__services-col">
+                  <article class="services-card services-card--size-1 hero-section__services-card">
+                    <picture class="bg-color bg-color--theme-darkgrey bg-color--opacity-75 services-card__picture">
+                      <img src="images/services-card-4.jpg" alt="Разработка мобильных приложений">
+                    </picture>
+                    <div class="services-card__inner">
+                      <div class="services-card__content">
+                        <h3 class="services-card__title">Разработка мобильных приложений</h3>
+                        <p class="services-card__text">Создание инновационных приложений, отвечающих требованиям современного рынка.</p>
+                      </div>
+                    </div>
+                    <div class="services-card__dropdown">
+                      <ul class="services-card__dropdown-list">
+                        <li>
+                          <a href="#" class="services-card__link">
+                            <span class="services-card__link-title">Разработка Android приложений</span>
+                            <svg class="u-icon services-card__link-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-4"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="services-card__link">
+                            <span class="services-card__link-title">Разработка IOS приложений</span>
+                            <svg class="u-icon services-card__link-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-4"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="hero-section__services-col">
+                  <article class="services-card services-card--size-3 hero-section__services-card">
+                    <picture class="bg-color bg-color--theme-darkgrey bg-color--opacity-75 services-card__picture">
+                      <img src="images/services-card-5.jpg" alt="Разработка умных систем">
+                    </picture>
+                    <div class="services-card__inner">
+                      <div class="services-card__content">
+                        <h3 class="services-card__title">Разработка умных систем</h3>
+                        <p class="services-card__text">Создание интелектуальных систем и программно аппаратных решений для оптимизации бизнес-процессов.</p>
+                      </div>
+                    </div>
+                    <div class="services-card__dropdown">
+                      <ul class="services-card__dropdown-list">
+                        <li>
+                          <a href="#" class="services-card__link">
+                            <span class="services-card__link-title">Разработка ИИ систем</span>
+                            <svg class="u-icon services-card__link-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-4"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="services-card__link">
+                            <span class="services-card__link-title">Разработка программно-аппаратных систем</span>
+                            <svg class="u-icon services-card__link-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-4"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="hero-section__services-col">
+                  <article class="services-card services-card--size-3 hero-section__services-card">
+                    <picture class="bg-color bg-color--theme-darkgrey bg-color--opacity-75 services-card__picture">
+                      <img src="images/services-card-6.jpg" alt="Интернет-реклама">
+                    </picture>
+                    <div class="services-card__inner">
+                      <div class="services-card__content">
+                        <h3 class="services-card__title">Интернет-реклама</h3>
+                        <p class="services-card__text">Услуги интернет-рекламы, включая SEO-продвижение и управление рекламными компаниями в социальных сетях.</p>
+                      </div>
+                    </div>
+                    <div class="services-card__dropdown">
+                      <ul class="services-card__dropdown-list">
+                        <li>
+                          <a href="#" class="services-card__link">
+                            <span class="services-card__link-title">SEO-продвижение и оптимизация сайтов</span>
+                            <svg class="u-icon services-card__link-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-4"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="services-card__link">
+                            <span class="services-card__link-title">Услуги SMM-специалиста под ключ</span>
+                            <svg class="u-icon services-card__link-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-4"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- hero-section END -->
+          <!-- about-section BEGIN -->
+          <section class="about-section">
+            <div class="container container--size-md about-section__container">
+              <div class="row about-section__row">
+                <div class="row__col--7 about-section__col about-section__col--content">
+                  <div class="about-section__content">
+                    <h2 class="about-section__title">Переход в онлайн - с нами просто и надежно</h2>
+                    <div class="content about-section__text">
+                      <p>IT Компания "Сокол" предлагает комплексные решения для вашего бизнеса, помогая вам успешно перенести свой оффлайн бизнес в онлайн-среду. Мы специализируемся на веб-разработке, маркетинге и поддержке IT-инфраструктуры, предоставляя вам все необходимые инструменты и&nbsp;знания для эффективного функционирования вашего бизнеса в онлайн-мире.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col--5 about-section__col about-section__col--media">
+                  <div class="about-section__media">
+                    <picture class="about-section__picture">
+                      <img src="images/about-section-img-1.jpg" alt="Переход в онлайн - с нами просто и надежно">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- about-section END -->
+          <!-- benefits-section BEGIN -->
+          <section class="benefits-section">
+            <div class="container container--size-md benefits-section__container">
+              <h2 class="benefits-section__title">За что нас ценят?</h2>
+              <div class="benefits-section__list">
+                <article class="faq-card benefits-section__list-card">
+                  <div class="faq-card__header">
+                    <button type="button" class="js-faq-card-toggle faq-card__btn">
+                      <h3 class="faq-card__title">Работа с любой сложностью проекта</h3>
+                    </button>
+                    <svg class="u-icon faq-card__icon">
+                      <use xlink:href="images/icons/icons.svg#close"></use>
+                    </svg>
+                  </div>
+                  <div class="faq-card__dropdown">
+                    <div class="content faq-card__text">
+                      <p>Мы ценимся за способность успешно справляться с проектами любой сложности, независимо от их сложности и объема. Наша компания обладает опытом и ресурсами, чтобы реализовать даже самые сложные задачи, обеспечивая высокий уровень качества и профессионализма.</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="faq-card benefits-section__list-card">
+                  <div class="faq-card__header">
+                    <button type="button" class="js-faq-card-toggle faq-card__btn">
+                      <h3 class="faq-card__title">Сотрудничество после выполнения работы</h3>
+                    </button>
+                    <svg class="u-icon faq-card__icon">
+                      <use xlink:href="images/icons/icons.svg#close"></use>
+                    </svg>
+                  </div>
+                  <div class="faq-card__dropdown">
+                    <div class="content faq-card__text">
+                      <p>Мы ценимся за способность успешно справляться с проектами любой сложности, независимо от их сложности и объема. Наша компания обладает опытом и ресурсами, чтобы реализовать даже самые сложные задачи, обеспечивая высокий уровень качества и профессионализма.</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="faq-card benefits-section__list-card">
+                  <div class="faq-card__header">
+                    <button type="button" class="js-faq-card-toggle faq-card__btn">
+                      <h3 class="faq-card__title">Комплексное решение проблемы заказчика</h3>
+                    </button>
+                    <svg class="u-icon faq-card__icon">
+                      <use xlink:href="images/icons/icons.svg#close"></use>
+                    </svg>
+                  </div>
+                  <div class="faq-card__dropdown">
+                    <div class="content faq-card__text">
+                      <p>Мы ценимся за способность успешно справляться с проектами любой сложности, независимо от их сложности и объема. Наша компания обладает опытом и ресурсами, чтобы реализовать даже самые сложные задачи, обеспечивая высокий уровень качества и профессионализма.</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="faq-card benefits-section__list-card">
+                  <div class="faq-card__header">
+                    <button type="button" class="js-faq-card-toggle faq-card__btn">
+                      <h3 class="faq-card__title">Опытные специалисты</h3>
+                    </button>
+                    <svg class="u-icon faq-card__icon">
+                      <use xlink:href="images/icons/icons.svg#close"></use>
+                    </svg>
+                  </div>
+                  <div class="faq-card__dropdown">
+                    <div class="content faq-card__text">
+                      <p>Нас ценят за опыт наших специалистов, которые обладают глубокими знаниями и большим опытом в своей области. Это позволяет нам предоставлять высококачественные услуги и решать сложные задачи для наших клиентов.</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="faq-card benefits-section__list-card">
+                  <div class="faq-card__header">
+                    <button type="button" class="js-faq-card-toggle faq-card__btn">
+                      <h3 class="faq-card__title">Использование современных технологий</h3>
+                    </button>
+                    <svg class="u-icon faq-card__icon">
+                      <use xlink:href="images/icons/icons.svg#close"></use>
+                    </svg>
+                  </div>
+                  <div class="faq-card__dropdown">
+                    <div class="content faq-card__text">
+                      <p>Мы ценимся за способность успешно справляться с проектами любой сложности, независимо от их сложности и объема. Наша компания обладает опытом и ресурсами, чтобы реализовать даже самые сложные задачи, обеспечивая высокий уровень качества и профессионализма.</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="faq-card benefits-section__list-card">
+                  <div class="faq-card__header">
+                    <button type="button" class="js-faq-card-toggle faq-card__btn">
+                      <h3 class="faq-card__title">Мы не работаем на вас, мы работаем с вами</h3>
+                    </button>
+                    <svg class="u-icon faq-card__icon">
+                      <use xlink:href="images/icons/icons.svg#close"></use>
+                    </svg>
+                  </div>
+                  <div class="faq-card__dropdown">
+                    <div class="content faq-card__text">
+                      <p>Мы ценимся за способность успешно справляться с проектами любой сложности, независимо от их сложности и объема. Наша компания обладает опытом и ресурсами, чтобы реализовать даже самые сложные задачи, обеспечивая высокий уровень качества и профессионализма.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+          <!-- benefits-section END -->
+          <!-- our-workflow-section BEGIN -->
+          <section class="our-workflow-section">
+            <div class="container container--size-md our-workflow-section__container">
+              <h2 class="our-workflow-section__title">Как мы работаем</h2>
+              <div class="our-workflow-section__road">
+                <picture class="our-workflow-section__road-map">
+                  <source media="(max-width: 1199px)" srcset="images/our-workflow-road-map-mobile.svg" width="320" height="320">
+                  <img src="images/our-workflow-road-map-desktop.svg" alt="Как мы работаем" width="994" height="234">
+                </picture>
+                <div class="our-workflow-section__road-graph-wrap">
+                  <picture class="our-workflow-section__road-graph our-workflow-section__road-graph--1" data-our-workflow-graph="slide-1">
+                    <img src="images/our-workflow-road-graph-1.svg" alt="Обсуждение проекта" width="438" height="123">
+                  </picture>
+                  <picture class="our-workflow-section__road-graph our-workflow-section__road-graph--2" data-our-workflow-graph="slide-2">
+                    <img src="images/our-workflow-road-graph-2.svg" alt="Концепт, функционнальные требования" width="599" height="123">
+                  </picture>
+                  <picture class="our-workflow-section__road-graph our-workflow-section__road-graph--3" data-our-workflow-graph="slide-3">
+                    <img src="images/our-workflow-road-graph-3.svg" alt="UX\UI дизайн, alpha версия, beta версия" width="651" height="356">
+                  </picture>
+                  <picture class="our-workflow-section__road-graph our-workflow-section__road-graph--4" data-our-workflow-graph="slide-4">
+                    <img src="images/our-workflow-road-graph-4.svg" alt="Seo-продвижение, поддержка продукта" width="491" height="123">
+                  </picture>
+                </div>
+                <div class="our-workflow-section__road-client">
+                  <svg class="u-icon our-workflow-section__road-client-img">
+                    <use xlink:href="images/icons/icons.svg#client"></use>
+                  </svg>
+                  <div class="our-workflow-section__road-client-title">Клиент</div>
+                </div>
+                <div class="our-workflow-section__road-title-wrap">
+                  <div class="our-workflow-section__road-title our-workflow-section__road-title--1">Обсуждение проекта</div>
+                  <div class="our-workflow-section__road-title our-workflow-section__road-title--2">Концепт</div>
+                  <div class="our-workflow-section__road-title our-workflow-section__road-title--3">Функциональные<br>требования</div>
+                  <div class="our-workflow-section__road-title our-workflow-section__road-title--4">Дизайн</div>
+                  <div class="our-workflow-section__road-title our-workflow-section__road-title--5">Поддержка продукта</div>
+                  <div class="our-workflow-section__road-title our-workflow-section__road-title--6">Seo-продвижение</div>
+                  <div class="our-workflow-section__road-title our-workflow-section__road-title--7">Beta версия</div>
+                  <div class="our-workflow-section__road-title our-workflow-section__road-title--8">Alpha версия</div>
+                </div>
+                <div class="our-workflow-section__road-subtitle-wrap">
+                  <div class="our-workflow-section__road-subtitle our-workflow-section__road-subtitle--1">Консалтинг</div>
+                  <div class="our-workflow-section__road-subtitle our-workflow-section__road-subtitle--2">Исследование</div>
+                  <div class="our-workflow-section__road-subtitle our-workflow-section__road-subtitle--3">Проектирование</div>
+                  <div class="our-workflow-section__road-subtitle our-workflow-section__road-subtitle--4">UX\UI</div>
+                  <div class="our-workflow-section__road-subtitle our-workflow-section__road-subtitle--5">Гарантия</div>
+                  <div class="our-workflow-section__road-subtitle our-workflow-section__road-subtitle--6">Маркетинг</div>
+                  <div class="our-workflow-section__road-subtitle our-workflow-section__road-subtitle--7">Разработка</div>
+                </div>
+              </div>
+            </div>
+            <div class="js-our-workflow-slider-init our-workflow-slider our-workflow-section__slider">
+              <div class="slider-control our-workflow-section__slider-control">
+                <button type="button" class="js-our-workflow-slider-btn-prev swiper-button swiper-button--theme-gray swiper-button-prev">
+                  <svg class="u-icon">
+                    <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                  </svg>
+                </button>
+                <div class="swiper-pagination"></div>
+                <button type="button" class="js-our-workflow-slider-btn-next swiper-button swiper-button--theme-gray swiper-button-next">
+                  <svg class="u-icon">
+                    <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide our-workflow-slider__slide our-workflow-slider__slide--theme-1" data-our-workflow-slide="slide-1">
+                  <div class="our-workflow-slider__slide-row">
+                    <div class="our-workflow-slider__slide-content">
+                      <div class="our-workflow-slider__slide-title">Обсуждение проекта</div>
+                      <div class="our-workflow-slider__slide-suptitle">Мы уделяем особое внимание удобству и внешнему виду любых интерфейсов, как для ваших внешних пользователей (клиентов), так и для внутренних (сотрудников).</div>
+                      <div class="content our-workflow-slider__slide-text">
+                        <p>Мы верим, что хороший пользовательский опыт способен снижать издержки на внедрение любых решений, сокращать звонки на горячую линию и убеждать людей пользоваться дистанционным сервисом, экономя при этом деньги и время.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide our-workflow-slider__slide our-workflow-slider__slide--theme-2" data-our-workflow-slide="slide-2">
+                  <div class="our-workflow-slider__slide-row">
+                    <div class="our-workflow-slider__slide-content">
+                      <div class="our-workflow-slider__slide-title">Концепт</div>
+                      <div class="our-workflow-slider__slide-suptitle">Мы уделяем особое внимание удобству и внешнему виду любых интерфейсов, как для ваших внешних пользователей (клиентов), так и для внутренних (сотрудников).</div>
+                      <div class="content our-workflow-slider__slide-text">
+                        <p>Мы верим, что хороший пользовательский опыт способен снижать издержки на внедрение любых решений, сокращать звонки на горячую линию и убеждать людей пользоваться дистанционным сервисом, экономя при этом деньги и время.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide our-workflow-slider__slide our-workflow-slider__slide--theme-3" data-our-workflow-slide="slide-2">
+                  <div class="our-workflow-slider__slide-row">
+                    <div class="our-workflow-slider__slide-content">
+                      <div class="our-workflow-slider__slide-title">Функционнальные требования</div>
+                      <div class="our-workflow-slider__slide-suptitle">Мы уделяем особое внимание удобству и внешнему виду любых интерфейсов, как для ваших внешних пользователей (клиентов), так и для внутренних (сотрудников).</div>
+                      <div class="content our-workflow-slider__slide-text">
+                        <p>Мы верим, что хороший пользовательский опыт способен снижать издержки на внедрение любых решений, сокращать звонки на горячую линию и убеждать людей пользоваться дистанционным сервисом, экономя при этом деньги и время.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide our-workflow-slider__slide our-workflow-slider__slide--theme-4" data-our-workflow-slide="slide-3">
+                  <div class="our-workflow-slider__slide-row">
+                    <div class="our-workflow-slider__slide-content">
+                      <div class="our-workflow-slider__slide-title">UX\UI дизайн</div>
+                      <div class="our-workflow-slider__slide-suptitle">Мы уделяем особое внимание удобству и внешнему виду любых интерфейсов, как для ваших внешних пользователей (клиентов), так и для внутренних (сотрудников).</div>
+                      <div class="content our-workflow-slider__slide-text">
+                        <p>Мы верим, что хороший пользовательский опыт способен снижать издержки на внедрение любых решений, сокращать звонки на горячую линию и убеждать людей пользоваться дистанционным сервисом, экономя при этом деньги и время.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide our-workflow-slider__slide our-workflow-slider__slide--theme-5" data-our-workflow-slide="slide-3">
+                  <div class="our-workflow-slider__slide-row">
+                    <div class="our-workflow-slider__slide-content">
+                      <div class="our-workflow-slider__slide-title">Alpha версия</div>
+                      <div class="our-workflow-slider__slide-suptitle">Мы уделяем особое внимание удобству и внешнему виду любых интерфейсов, как для ваших внешних пользователей (клиентов), так и для внутренних (сотрудников).</div>
+                      <div class="content our-workflow-slider__slide-text">
+                        <p>Мы верим, что хороший пользовательский опыт способен снижать издержки на внедрение любых решений, сокращать звонки на горячую линию и убеждать людей пользоваться дистанционным сервисом, экономя при этом деньги и время.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide our-workflow-slider__slide our-workflow-slider__slide--theme-6" data-our-workflow-slide="slide-3">
+                  <div class="our-workflow-slider__slide-row">
+                    <div class="our-workflow-slider__slide-content">
+                      <div class="our-workflow-slider__slide-title">Beta версия</div>
+                      <div class="our-workflow-slider__slide-suptitle">Мы уделяем особое внимание удобству и внешнему виду любых интерфейсов, как для ваших внешних пользователей (клиентов), так и для внутренних (сотрудников).</div>
+                      <div class="content our-workflow-slider__slide-text">
+                        <p>Мы верим, что хороший пользовательский опыт способен снижать издержки на внедрение любых решений, сокращать звонки на горячую линию и убеждать людей пользоваться дистанционным сервисом, экономя при этом деньги и время.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide our-workflow-slider__slide our-workflow-slider__slide--theme-7" data-our-workflow-slide="slide-4">
+                  <div class="our-workflow-slider__slide-row">
+                    <div class="our-workflow-slider__slide-content">
+                      <div class="our-workflow-slider__slide-title">Seo-продвижение</div>
+                      <div class="our-workflow-slider__slide-suptitle">Мы уделяем особое внимание удобству и внешнему виду любых интерфейсов, как для ваших внешних пользователей (клиентов), так и для внутренних (сотрудников).</div>
+                      <div class="content our-workflow-slider__slide-text">
+                        <p>Мы верим, что хороший пользовательский опыт способен снижать издержки на внедрение любых решений, сокращать звонки на горячую линию и убеждать людей пользоваться дистанционным сервисом, экономя при этом деньги и время.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide our-workflow-slider__slide our-workflow-slider__slide--theme-8" data-our-workflow-slide="slide-4">
+                  <div class="our-workflow-slider__slide-row">
+                    <div class="our-workflow-slider__slide-content">
+                      <div class="our-workflow-slider__slide-title">Поддержка продукта</div>
+                      <div class="our-workflow-slider__slide-suptitle">Мы уделяем особое внимание удобству и внешнему виду любых интерфейсов, как для ваших внешних пользователей (клиентов), так и для внутренних (сотрудников).</div>
+                      <div class="content our-workflow-slider__slide-text">
+                        <p>Мы верим, что хороший пользовательский опыт способен снижать издержки на внедрение любых решений, сокращать звонки на горячую линию и убеждать людей пользоваться дистанционным сервисом, экономя при этом деньги и время.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container container--size-md our-workflow-section__container">
+              <article class="info-card our-workflow-section__artificial-intelligence">
+                <div class="row info-card__inner">
+                  <div class="row__col--5 info-card__col info-card__col--media">
+                    <div class="info-card__media">
+                      <picture class="info-card__picture">
+                        <img src="images/info-card-1.jpg" alt="Искусственный интеллект для персонализации контента">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="row__col--7 info-card__col info-card__col--content">
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Искусственный интеллект для персонализации контента</h3>
+                      <div class="content info-card__text">
+                        <p>Мы применяем технологии искусственного интеллекта для автоматической настройки контента сайта в соответствии с потребностями и предпочтениями каждого посетителя, обеспечивая уникальный пользовательский опыт.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="terms-cooperation our-workflow-section__terms-cooperation">
+                <div class="row terms-cooperation__row">
+                  <div class="row__col--7 terms-cooperation__col terms-cooperation__col--content">
+                    <div class="terms-cooperation__content">
+                      <h3 class="terms-cooperation__title">Условия сотрудничества</h3>
+                      <div class="content terms-cooperation__text">
+                        <p>Данный раздел содержит информацию о критериях и ограничениях, по которым мы не можем принимать определенные запросы или клиентов. Здесь перечмслены условия сотрудничества, которые помогут вам понять, подходят ли ваши запросы для сотрудничества.</p>
+                      </div>
+                      <div class="terms-cooperation__services">
+                        <div class="terms-cooperation__services-list">
+                          <button type="button" class="js-terms-cooperation-slider-btn-nav terms-cooperation__services-item">
+                            <span class="terms-cooperation__services-item-icon">
+                              <svg class="u-icon">
+                                <use xlink:href="images/icons/icons.svg#services-type-1"></use>
+                              </svg>
+                            </span>
+                            <span class="terms-cooperation__services-item-title">Конкретное<br>решение</span>
+                          </button>
+                          <button type="button" class="js-terms-cooperation-slider-btn-nav terms-cooperation__services-item">
+                            <span class="terms-cooperation__services-item-icon">
+                              <svg class="u-icon">
+                                <use xlink:href="images/icons/icons.svg#services-type-2"></use>
+                              </svg>
+                            </span>
+                            <span class="terms-cooperation__services-item-title">Лендинг</span>
+                          </button>
+                          <button type="button" class="js-terms-cooperation-slider-btn-nav terms-cooperation__services-item">
+                            <span class="terms-cooperation__services-item-icon">
+                              <svg class="u-icon">
+                                <use xlink:href="images/icons/icons.svg#services-type-3"></use>
+                              </svg>
+                            </span>
+                            <span class="terms-cooperation__services-item-title">Сайт-визитка</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row__col--5 terms-cooperation__col terms-cooperation__col--media">
+                    <div class="terms-cooperation__main">
+                      <div class="js-terms-cooperation-slider-init terms-cooperation__main-services">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide terms-cooperation__main-services-card">
+                            <picture class="terms-cooperation__main-services-card-picture">
+                              <img src="images/terms-cooperation-img-1.jpg" alt="Условия сотрудничества">
+                            </picture>
+                          </div>
+                          <div class="swiper-slide terms-cooperation__main-services-card">
+                            <div class="terms-cooperation__main-services-card-content">
+                              <h3 class="terms-cooperation__main-services-card-title">Вам нужно конкретное решение</h3>
+                              <div class="content terms-cooperation__main-services-card-text">
+                                <p>Наша компания специализируется на анализе и улучшении уже существующих проектов, поэтому, если у вас конкретная проблема или задача, которую требуется решить, связанная с веб-продуктом, мы готовы обсудить возможное сотрудничество для достижения ваших целей.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide terms-cooperation__main-services-card">
+                            <div class="terms-cooperation__main-services-card-content">
+                              <h3 class="terms-cooperation__main-services-card-title">Вам нужен лендинг</h3>
+                              <div class="content terms-cooperation__main-services-card-text">
+                                <p>Наша компания специализируется на крупных проектах и решении определенных проблем уже существующих сайтов. Из-за нашей специализации, мы не можем взяться за создание лендинга, который является более компактным и ограниченным по функционалу, чем типичный веб-продукт, над которым мы работаем.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide terms-cooperation__main-services-card">
+                            <div class="terms-cooperation__main-services-card-content">
+                              <h3 class="terms-cooperation__main-services-card-title">Вам нужен сайт-визитка</h3>
+                              <div class="content terms-cooperation__main-services-card-text">
+                                <p>Наши услуги сфокусированы на комплексных проектах и оптимизации уже существующих сайтов с целью максимизации их эффективности. Создание сайта-визитки, как правило, не требует такого уровня задействования, который мы предлагаем, поэтому мы не можем взяться за данную задачу.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+          <!-- our-workflow-section END -->
+          <!-- project-services-section BEGIN -->
+          <section class="project-services-section">
+            <div class="container container--size-md project-services-section__container">
+              <h2 class="project-services-section__title">Проектные успехи</h2>
+              <div class="js-project-services-slider-init project-services-section__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide project-services-section__slider-slide">
+                    <picture class="bg-color bg-color--theme-darkgrey bg-color--opacity-55 project-services-section__slider-picture">
+                      <img src="images/project-services-section-slider-img-1.jpg" alt="Цифровое воссоединение">
+                    </picture>
+                    <div class="project-services-section__slider-content">
+                      <div class="project-services-section__slider-title">Цифровое<br>воссоединение</div>
+                      <a href="#" class="btn btn--size-md btn--theme-accent-fill project-services-section__slider-btn">
+                        <span class="btn__inner">
+                          <span class="btn__title">Подробнее</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide project-services-section__slider-slide">
+                    <picture class="bg-color bg-color--theme-darkgrey bg-color--opacity-55 project-services-section__slider-picture">
+                      <img src="images/project-services-section-slider-img-2.jpg" alt="IT-инновации в синхроне">
+                    </picture>
+                    <div class="project-services-section__slider-content">
+                      <div class="project-services-section__slider-title">IT-инновации в<br>синхроне</div>
+                      <a href="#" class="btn btn--size-md btn--theme-accent-fill project-services-section__slider-btn">
+                        <span class="btn__inner">
+                          <span class="btn__title">Подробнее</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide project-services-section__slider-slide">
+                    <picture class="bg-color bg-color--theme-darkgrey bg-color--opacity-55 project-services-section__slider-picture">
+                      <img src="images/project-services-section-slider-img-3.jpg" alt="Инновационное решение">
+                    </picture>
+                    <div class="project-services-section__slider-content">
+                      <div class="project-services-section__slider-title">Инновационное<br>решение</div>
+                      <a href="#" class="btn btn--size-md btn--theme-accent-fill project-services-section__slider-btn">
+                        <span class="btn__inner">
+                          <span class="btn__title">Подробнее</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide project-services-section__slider-slide">
+                    <picture class="bg-color bg-color--theme-darkgrey bg-color--opacity-55 project-services-section__slider-picture">
+                      <img src="images/project-services-section-slider-img-4.jpg" alt="Цифровое преображение">
+                    </picture>
+                    <div class="project-services-section__slider-content">
+                      <div class="project-services-section__slider-title">Цифровое<br>преображение</div>
+                      <a href="#" class="btn btn--size-md btn--theme-accent-fill project-services-section__slider-btn">
+                        <span class="btn__inner">
+                          <span class="btn__title">Подробнее</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide project-services-section__slider-slide">
+                    <picture class="bg-color bg-color--theme-darkgrey bg-color--opacity-55 project-services-section__slider-picture">
+                      <img src="images/project-services-section-slider-img-5.jpg" alt="Синергия цифровой трансформации">
+                    </picture>
+                    <div class="project-services-section__slider-content">
+                      <div class="project-services-section__slider-title">Синергия цифровой<br>трансформации</div>
+                      <a href="#" class="btn btn--size-md btn--theme-accent-fill project-services-section__slider-btn">
+                        <span class="btn__inner">
+                          <span class="btn__title">Подробнее</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-control project-services-section__slider-control">
+                  <button type="button" class="js-project-services-slider-btn-prev swiper-button swiper-button--theme-gray swiper-button-prev">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                    </svg>
+                  </button>
+                  <div class="swiper-pagination"></div>
+                  <button type="button" class="js-project-services-slider-btn-next swiper-button swiper-button--theme-gray swiper-button-next">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- project-services-section END -->
+          <!-- cta-section BEGIN -->
+          @@include('html/components/cta-section.html')
+          <!-- cta-section END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

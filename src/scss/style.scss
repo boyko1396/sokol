@@ -1,0 +1,40 @@
+@use 'sass:math';
+
+/** Local font inclusion from the "./src/fonts" folder */
+@import 'config/fonts';
+
+/** Variable inclusion */
+@import 'config/vars';
+
+/** Inclusion of sass functions, mixins, and style extends */
+@import 'config/functions';
+@import 'config/mixins';
+@import 'config/patternSelectors';
+
+/** Reset */
+@import 'config/default';
+
+/** Libraries */
+@import 'libs/swiper';
+@import 'libs/intlTelInput2';
+@import 'libs/nice-select2';
+
+/** Common parameters, templates, and utility classes */
+@import 'config/media';
+@import 'config/base';
+
+/** Common BEM blocks used throughout the project */
+@import 'config/common';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/typical-section';
+@import 'components/hero-section';
+@import 'components/about-section';
+@import 'components/benefits-section';
+@import 'components/our-workflow-section';
+@import 'components/project-services-section';
+@import 'components/cta-section';
+@import 'components/project-layout';
+@import 'components/services-layout';
+
+/** Inclusion of styles for individual blocks and sections */

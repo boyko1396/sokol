@@ -1,0 +1,224 @@
+.our-workflow-section {
+  padding: $rhythmYLg2 0;
+  @media (max-width: $lg) {
+    padding: $rhythmYMd2 0;
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 136rem;
+    @media (max-width: $lg) {
+      margin-bottom: 40rem;
+    }
+  }
+  &__road {
+    width: 100%;
+    max-width: 994rem;
+    margin: 0 6.9% 110rem auto;
+    position: relative;
+    @media (max-width: $xl) {
+      margin-right: 0;
+    }
+    @media (max-width: $lg) {
+      max-width: 700rem;
+      margin: 0 auto;
+    }
+    @media (max-width: $sm) {
+      width: auto;
+      margin: 0 var(--gap-fluid-);
+    }
+    &-map {
+      user-select: none;
+      pointer-events: none;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    &-client {
+      background: conic-gradient(from 270deg at 50% 52.78%, #056CF2 -181.76deg, #BF0606 177.79deg, #056CF2 178.24deg, #BF0606 537.79deg);
+      width: 108rem;
+      height: 108rem;
+      margin-top: -56rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: -156rem;
+      z-index: 0;
+      @media (max-width: $lg) {
+        display: none;
+      }
+      &:before {
+        background: $darkGrayColor;
+        content: '';
+        position: absolute;
+        top: 5rem;
+        right: 5rem;
+        bottom: 5rem;
+        left: 5rem;
+        border-radius: inherit;
+        z-index: -1;
+      }
+      &-img {
+        width: 44rem;
+        height: 44rem;
+        margin: 0 auto 4rem;
+        display: block;
+      }
+      &-title {
+        font-size: var(--fs-10);
+      }
+    }
+    &-graph {
+      position: absolute;
+      transition: $transition;
+      user-select: none;
+      pointer-events: none;
+      &:not(.is-show) {
+        opacity: 0;
+        visibility: hidden;
+      }
+      &-wrap {
+        @media (max-width: $lg) {
+          display: none;
+        }
+      }
+      &--1,
+      &--2,
+      &--3 {
+        top: -27.5%;
+      }
+      &--1,
+      &--4 {
+        left: -11%;
+      }
+      &--1 {
+        display: block;
+      }
+      &--2 {
+        left: 19%;
+      }
+      &--3 {
+        right: -3%;
+      }
+      &--4 {
+        bottom: -27.6%;
+      }
+    }
+    &-title {
+      position: absolute;
+      &-wrap {
+        @media (max-width: $lg) {
+          display: none;
+        }
+      }
+      &--1,
+      &--2,
+      &--3,
+      &--4 {
+        margin-bottom: .7%;
+        bottom: 100%;
+      }
+      &--5,
+      &--6,
+      &--7,
+      &--8 {
+        margin-top: .8%;
+        top: 100%;
+      }
+      &--1 {
+        left: -9.6%;
+      }
+      &--2 {
+        left: 20.6%;
+      }
+      &--3 {
+        left: 38.1%;
+      }
+      &--4 {
+        left: 67.3%;
+      }
+      &--5 {
+        left: -9.7%;
+      }
+      &--6 {
+        left: 15.4%;
+      }
+      &--7 {
+        left: 41.8%;
+      }
+      &--8 {
+        left: 64.2%;
+      }
+    }
+    &-subtitle {
+      font-size: var(--fs-7);
+      color: $grayColor;
+      position: absolute;
+      &-wrap {
+        @media (max-width: $lg) {
+          display: none;
+        }
+      }
+      &--1,
+      &--2,
+      &--3 {
+        top: 14%;
+      }
+      &--5,
+      &--6,
+      &--7 {
+        bottom: 13%;
+      }
+      &--1 {
+        left: 8.3%;
+      }
+      &--2 {
+        left: 30.6%;
+      }
+      &--3 {
+        left: 52.1%;
+      }
+      &--4 {
+        top: 45.3%;
+        right: 5.7%;
+      }
+      &--5 {
+        left: 9.2%;
+      }
+      &--6 {
+        left: 32%;
+      }
+      &--7 {
+        left: 54.2%;
+      }
+    }
+  }
+  &__slider {
+    margin-bottom: $rhythmYLg1;
+    @media (max-width: $lg) {
+      margin-top: 40rem;
+      margin-bottom: $rhythmYMd1;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &-control {
+      margin: 0 0 32rem;
+      @media (max-width: $lg) {
+        margin: 24rem 0 0;
+      }
+    }
+  }
+  &__artificial-intelligence {
+    margin-bottom: $rhythmYLg1;
+    @media (max-width: $lg) {
+      margin-bottom: $rhythmYMd1;
+    }
+  }
+}

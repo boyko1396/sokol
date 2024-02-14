@@ -1,0 +1,40 @@
+.typical-section {
+  padding: $rhythmYLg2 0;
+  @media (max-width: $lg) {
+    padding: $rhythmYMd2 0;
+  }
+  &__container {
+  }
+  &__header {
+    margin: 0 0 72rem;
+    @media (max-width: $lg) {
+      margin-bottom: 40rem;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: 22rem;
+    }
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    margin: 0 0 16rem;
+    @media (max-width: $sm) {
+      margin-bottom: 12rem;
+    }
+  }
+  &__text {
+    max-width: calc(50%  - var(--gap));
+    margin: 0 0 32rem;
+    font-size: var(--fs-7);
+    color: $grayColor;
+    @media (max-width: $sm) {
+      max-width: 100%;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: 22rem;
+    }
+  }
+  &__project-list {
+  }
+}

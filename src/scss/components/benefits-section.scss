@@ -1,0 +1,21 @@
+.benefits-section {
+  padding: $rhythmYLg1 0 $rhythmYLg2;
+  @media (max-width: $lg) {
+    padding: $rhythmYMd1 0 $rhythmYMd2;
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 72rem;
+    @media (max-width: $lg) {
+      margin-bottom: 32rem;
+    }
+  }
+  &__list {
+    &-card {
+      &:not(:last-child) {
+        margin-bottom: 24rem;
+      }
+    }
+  }
+}

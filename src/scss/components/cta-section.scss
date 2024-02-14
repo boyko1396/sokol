@@ -1,0 +1,93 @@
+.cta-section {
+  padding: $rhythmYLg2 0;
+  @media (max-width: $lg) {
+    padding: $rhythmYMd2 0;
+  }
+  &__container {
+  }
+  &__block {
+    background: $blackColor;
+    padding: 64rem 0;
+    border-radius: $radiusLg;
+    @media (max-width: $lg) {
+      padding: 50rem 0;
+    }
+    @media (max-width: $sm) {
+      padding: 40rem var(--gap-fluid);
+    }
+    &-row {
+      align-items: center;
+    }
+    &-col {
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+      &--content {
+      }
+      &--form {
+      }
+    }
+    &-content {
+      max-width: 506rem;
+      margin: 0 auto;
+      padding: 0 54rem;
+      @media (max-width: $lg) {
+        padding: 0 var(--gap-fluid);
+      }
+      @media (max-width: $sm) {
+        max-width: 300rem;
+        margin: 0 auto 34rem;
+        text-align: center;
+      }
+    }
+    &-title {
+      margin: 0 0 32rem;
+      @media (max-width: $lg) {
+        margin-bottom: 24rem;
+      }
+      @media (max-width: $sm) {
+        margin-bottom: 12rem;
+      }
+    }
+    &-text {
+      font-size: var(--fs-7);
+      color: $grayColor;
+    }
+  }
+  &__form {
+    max-width: 512rem;
+    margin-right: 54rem;
+    @media (max-width: $lg) {
+      max-width: 100%;
+      margin-right: var(--gap-fluid);
+    }
+    @media (max-width: $sm) {
+      margin-right: 0;
+    }
+    &-line {
+      margin: 0 0 18rem;
+    }
+    &-privacy {
+      margin: -2rem 0 16rem;
+    }
+    &-btn {
+      min-width: 190rem;
+      @media (max-width: $sm) {
+        margin-right: auto;
+        margin-left: auto;
+        display: table;
+      }
+      @media (max-width: $xs) {
+        width: 100%;
+      }
+    }
+    &-select {
+      width: 100%;
+    }
+  }
+}
+
+select.cta-section__form-select {
+  position: absolute;
+}

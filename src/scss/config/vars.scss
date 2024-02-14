@@ -1,0 +1,123 @@
+$siteResolution: 1px;
+$mainFont: 'Acrom';
+$textFont: 'Montserrat';
+$mainWeight: 400;
+$lineHeightMedium: 1.22;
+$lineHeightTitle: 1.22;
+$lineHeightDefault: $lineHeightMedium;
+
+$containerWidth: 1432rem;
+$containerWidthFluid: 100%;
+
+$blueColor: #0583F2;
+$blueDarkColor: #056CF2;
+$whiteColor: #ffffff;
+$darkGrayColor: #2B2A28;
+$blackColor: #212121;
+$lightGrayColor: #F2F2F2;
+$mediumGrayColor: #dddddd;
+$grayColor: #80858B;
+$redColor: #BF0606;
+$crimsonColor: #E3223B;
+$orangeColor: #FF5931;
+$lightOrangeColor: #F2A950;
+$purpleColor: #753FBF;
+$violetColor: #8448D9;
+$skyBlueColor: #2496FA;
+$steelBlueColor: #5A779A;
+$accentColor: $blueColor;
+
+$fontFamily: $mainFont, $textFont, Open Sans, sans-serif, Arial;
+$fontAccent: $textFont, $mainFont, Open Sans, sans-serif, Arial;
+$fontColor: $lightGrayColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+
+$radiusXs: 8rem;
+$radiusSm: 12rem;
+$radiusMd: 20rem;
+$radiusLg: 32rem;
+
+$headerHeightLg: 110rem;
+$headerHeightMd: 80rem;
+
+$rhythmYLg1: 130rem;
+$rhythmYLg2: 65rem;
+$rhythmYMd1: 80rem;
+$rhythmYMd2: 40rem;
+
+$xl: 1440px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: var(--fs-5);
+  --fs-1: 64rem;
+  --fs-2: 48rem;
+  --fs-3: 32rem;
+  --fs-4: 24rem;
+  --fs-5: 20rem;
+  --fs-6: 18rem;
+  --fs-7: 16rem;
+  --fs-8: 14rem;
+  --fs-9: 12rem;
+  --fs-10: 10rem;
+  --fs-11: 36rem;
+  --fs-12: 40rem;
+  --gap: 30rem;
+  --gap-: -30rem;
+  --gap-fluid: 60rem;
+  --gap-fluid-: -60rem;
+  @media (max-width: $xl) {
+    --fs-1: 52rem;
+    --fs-2: 40rem;
+    --fs-3: 26rem;
+    --fs-4: 22rem;
+    --fs-5: 18rem;
+    --fs-6: 16rem;
+    --fs-7: 14rem;
+    --fs-8: 12rem;
+    --fs-9: 10rem;
+    --fs-10: 8rem;
+    --fs-11: 30rem;
+    --fs-12: 34rem;
+    --gap: 15rem;
+    --gap-: -15rem;
+    --gap-fluid: 30rem;
+    --gap-fluid-: -30rem;
+  }
+  @media (max-width: $md) {
+    --fs-1: 44rem;
+    --fs-2: 34rem;
+    --fs-3: 24rem;
+    --fs-4: 20rem;
+    --fs-5: 16rem;
+    --fs-11: 22rem;
+    --fs-12: 26rem;
+  }
+  @media (max-width: $sm) {
+    --fs-1: 34rem;
+    --fs-2: 26rem;
+    --fs-3: 20rem;
+    --fs-4: 16rem;
+    --fs-5: 14rem;
+    --fs-11: 20rem;
+    --fs-12: 24rem;
+    --gap: 10rem;
+    --gap-: -10rem;
+    --gap-fluid: 20rem;
+    --gap-fluid-: -20rem;
+  }
+}

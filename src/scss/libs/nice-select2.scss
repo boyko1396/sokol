@@ -1,0 +1,268 @@
+@use 'sass:math';
+// Default variables
+$font_size: 16rem !default;
+$font_size_small: 12rem !default;
+
+$input_border_radius: $radiusSm !default;
+$input_height: 56rem !default;
+$input_height_small: 36rem !default;
+$dropdown_padding: 24rem !default;
+
+$gray_dark: #444 !default;
+$gray: #999 !default;
+$gray_light: #e8e8e8 !default;
+$gray_lighter: #f6f6f6 !default;
+$primary_light: $gray !default;
+$arrow_color: $gray !default;
+
+// Style the dropdown
+.nice-select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: $lightGrayColor;
+  border-radius: $input_border_radius;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-size: $font_size;
+  font-weight: normal;
+  height: $input_height;
+  line-height: inherit;
+  color: $darkGrayColor;
+  outline: none;
+  padding: 26rem 0 8rem;
+  padding-left: $dropdown_padding;
+  padding-right: $dropdown_padding + 34;
+  position: relative;
+  text-align: left !important;
+  box-shadow: 0 0 0 2rem transparent;
+  transition: $transition;
+  transition-property: box-shadow;
+  user-select: none;
+  width: auto;
+  .current {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &:hover {
+    @media (min-width: $lg-mf) {
+      box-shadow: 0 0 0 2rem $accentColor;
+    }
+  }
+  &.open {
+    box-shadow: 0 0 0 2rem $accentColor;
+  }
+  // Arrow
+  &:after {
+    background: 50% / contain no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.46967 7.96967C4.76256 7.67678 5.23744 7.67678 5.53033 7.96967L12 14.4393L18.4697 7.96967C18.7626 7.67678 19.2374 7.67678 19.5303 7.96967C19.8232 8.26256 19.8232 8.73744 19.5303 9.03033L12.5303 16.0303C12.3897 16.171 12.1989 16.25 12 16.25C11.8011 16.25 11.6103 16.171 11.4697 16.0303L4.46967 9.03033C4.17678 8.73744 4.17678 8.26256 4.46967 7.96967Z' fill='%2380858B'/%3E%3C/svg%3E%0A");
+    width: 24rem;
+    height: 24rem;
+    margin-top: -12rem;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20rem;
+    transition: $transition;
+  }
+  
+  &.open {
+    @extend :active;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    &:after {
+      transform: rotate(-180deg);
+    }
+    .nice-select-dropdown {
+      opacity: 1;
+      pointer-events: auto;
+      transform: scale(1) translateY(0);
+    }
+  }
+  &.disabled {
+    border-color: lighten($gray_light, 2%);
+    color: $gray;
+    pointer-events: none;
+    &:after { 
+      border-color: lighten($arrow_color, 20%);
+    }
+  }
+  
+  // Modifiers
+  &.wide {
+    width: 100%;
+    .nice-select-dropdown {
+      left: 0 !important;
+      right: 0 !important;
+    }
+  }
+  &.right {
+    float: right;
+    .nice-select-dropdown {
+      left: auto;
+      right: 0;
+    }
+  }
+  &.small {
+    font-size: $font_size_small;
+    height: $input_height_small;
+    line-height: $input_height_small - 2;
+    &:after { 
+      height: 4rem;
+      width: 4rem;
+    }
+    .option {
+      line-height: $input_height_small - 2;
+      min-height: $input_height_small - 2;
+    }
+  }
+
+  .nice-select-dropdown {
+    width: 100%;
+    background: $lightGrayColor;
+    border-radius: 0 0 $input_border_radius $input_border_radius;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 0 2rem $accentColor;
+    z-index: 9;
+    opacity: 0;
+  }
+
+  // List and options
+  .list {
+    margin: 16rem 8rem 16rem 0;
+    padding: 0;
+    list-style-type: none;
+    border-radius: 0 0 $input_border_radius $input_border_radius;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 184rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 10rem;
+      background-color: transparent;
+    }
+    &::-moz-scrollbar {
+      width: 10rem;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #D1D1D1;
+      border-radius: 6rem;
+    }
+    &::-moz-scrollbar-thumb {
+      background-color: #D1D1D1;
+      border-radius: 6rem;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #c7c7c7;
+    }
+    &::-moz-scrollbar-thumb:hover {
+      background-color: #c7c7c7;
+    }
+  }
+  .option {
+    margin: 0;
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 1.3;
+    list-style: none;
+    outline: none;
+    padding: 8rem 0;
+    padding-left: $dropdown_padding;
+    padding-right: $dropdown_padding;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    &:hover, &.focus, &.selected.focus { 
+      font-weight: bold;
+    }
+    &:empty {
+      display: none !important;
+    }
+    &.selected {
+      font-weight: bold;
+    }
+    &.disabled {
+      background-color: transparent;
+      color: $gray;
+      cursor: default;
+    }
+  }
+  
+  .optgroup{
+    font-weight: bold;
+  }
+}
+
+// Use display instead of opacity for IE <= 10
+.no-csspointerevents .nice-select {
+  .nice-select-dropdown {
+    display: none;
+  }
+  &.open {
+    .nice-select-dropdown {
+      display: block;
+    }
+  }
+}
+
+.nice-select{
+  .has-multiple {
+    white-space: inherit;
+    height: auto;
+    padding: 7rem 12rem;
+    min-height: 36rem;
+    line-height: 22rem;
+
+    span.current {
+      border: 1px solid #CCC;
+      background: #EEE;
+      padding: 0 10rem;
+      border-radius: 3rem;
+      display: inline-block;
+      line-height: 24rem;
+      font-size: 14rem;
+      margin-bottom: 3rem;
+      margin-right: 3rem
+    }
+
+    .multiple-options {
+      display: block;
+      line-height: 24rem;
+      padding: 0
+    }
+  }
+
+  .nice-select-search-box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5rem;
+    pointer-events: none;
+    border-radius: 5rem 5rem 0 0;
+  }
+
+  .nice-select-search {
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid $gray_light;
+    border-radius: 3rem;
+    color: $gray_dark;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 7rem 12rem;
+    margin: 0 10rem 0 0;
+    width: 100%;
+    min-height: 36rem;
+    line-height: 22rem;
+    height: auto;
+    outline: 0!important;
+    font-size: $font_size;
+  }
+}

@@ -1,0 +1,143 @@
+.footer {
+  padding-top: $rhythmYLg1;
+  @media (max-width: $lg) {
+    padding-top: $rhythmYMd1;
+  }
+  @media (max-width: $sm) {
+    padding-top: $rhythmYMd2;
+  }
+  &__container {
+  }
+  &__row {
+  }
+  &__col {
+    &--nav {
+      @media (max-width: $lg) {
+        max-width: 50%;
+        margin-bottom: var(--gap-fluid);
+        flex-basis: 50%;
+      }
+      @media (max-width: $xs) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &--copyright {
+    }
+  }
+  &__title {
+    margin: 0 0 32rem;
+    font-size: var(--fs-3);
+    @media (max-width: $lg) {
+      margin-bottom: 24rem;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: 8rem;
+    }
+  }
+  &__nav {
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    &-item {
+      margin: 0 0 32rem;
+      padding: 0;
+      @media (max-width: $lg) {
+        margin-bottom: 18rem;
+      }
+      @media (max-width: $sm) {
+        margin-bottom: 6rem;
+      }
+    }
+    &-link {
+      @extend %area-click;
+      display: block;
+      transition: $transition;
+      &:hover {
+        text-decoration: none;
+        @media (min-width: $lg-mf) {
+          color: $accentColor;
+        }
+      }
+    }
+  }
+  &__bottom {
+    margin-top: 70rem;
+    padding: 40rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    @media (max-width: $lg) {
+      margin-top: 20rem;
+      padding: 20rem 0;
+    }
+    @media (max-width: $sm) {
+      padding: 10rem 0;
+    }
+    &:before {
+      background: $grayColor;
+      width: 94vw;
+      height: 1px;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      @media (max-width: $xl) {
+        width: 100%;
+      }
+    }
+    &-logo {
+      flex-shrink: 0;
+      mix-blend-mode: lighten;
+    }
+    &-subnav {
+      font-size: var(--fs-8);
+      &-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        @media (max-width: $xs) {
+          flex-wrap: wrap;
+        }
+      }
+      &-item {
+        margin: 0;
+        padding: 0;
+        @media (max-width: $xs) {
+          max-width: 100%;
+          flex: 0 0 100%;
+          text-align: right;
+        }
+        &:not(:last-child) {
+          margin-right: 110rem;
+          @media (max-width: $lg) {
+            margin-right: 50rem;
+          }
+          @media (max-width: $sm) {
+            margin-right: 30rem;
+          }
+          @media (max-width: $xs) {
+            margin-right: 0;
+            margin-bottom: 5rem;
+          }
+        }
+      }
+      &-link {
+        @extend %area-click;
+        display: block;
+        transition: $transition;
+        &:hover {
+          text-decoration: none;
+          @media (min-width: $lg-mf) {
+            color: $accentColor;
+          }
+        }
+      }
+    }
+  }
+}
